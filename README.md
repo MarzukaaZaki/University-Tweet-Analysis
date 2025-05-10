@@ -7,3 +7,4 @@ I performed exploratory analysis to understand the linguistic and thematic diffe
 ### Histogram
 Tweet volume from US universities (2010-2022) shows strong initial growth, peaking around 2014-2015, followed by a consistent decline in subsequent years.
 
+![Histogram of 8M Tweets over 2010 to 2022](/Visualizations/Histograms/Histogram_Whole%20Dataset.png)

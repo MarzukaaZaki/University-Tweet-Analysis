@@ -22,6 +22,7 @@ This analysis was conducted at multiple levels:
 #### Top DEI Words
 
 **Across Entire Dataset**
+
 This analysis identifies the top DEI-related terms across the full corpus of university tweets. Words such as "woman", "diversity", "justice" appear with higher scores.
 
 
@@ -36,6 +37,24 @@ The top DEI words found for the event, Black Lives Matter, is shown below. TF-ID
 
 
 **By Year Brackets**
+
 DEI language has evolved notably over time—earlier years featured generic terms like diversity, fair, women, while more recent years emphasized black, access, and justice
 
 ![Top DEI Words by Year Brackets](/Visualizations/TF-IDF%20Analysis/top_dei_keywords_by_year_brackets.png)
+
+### Hashtag Analysis
+
+DEI-related hashtag usage is dominated by #blackhistorymonth (over 7,000 uses; 22.8% share) and #womenshistorymonth (over 5,000 uses; 16.5%). 
+
+![Top DEI Hashtags Across the Entire Dataset](/Visualizations/Hashtag%20Analysis/top_dei_hashtags_allschools.png)
+
+### Tweet Classification
+ 
+To enable DEI-related tweet classification, I **manually** curated a labeled dataset with approximately over 2000 tweets, ensuring balanced representation from school accounts, rankings, regions, and periods. Then, I used this to finetune a bertweet model and used it to classify the 8M tweets as DEI or Non-DEI.
+
+**Some key insights from the classification**
+
+Over time, the DEI discourse reaches its peak at 2020/2021, suggesting the surge of DEI conversations during that time due the events like the Black Lives Matter movement, Covid19 Pandemic, and the US Presidential Election.
+
+![Predicted DEI Trend Over the Years](/Visualizations/Trend%20over%20the%20Years/Whole_Dataset_8Mtweets.png)
+
